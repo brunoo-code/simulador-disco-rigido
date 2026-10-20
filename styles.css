@@ -1,0 +1,48 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-slate-800\/80 {
+    min-height: 92px;
+    min-width: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+}
+
+.bg-slate-800\/80 > span:first-child {
+    margin-top: 0;
+}
+
+#totalSpaceText,
+#usedSpaceText,
+#freeSpaceText {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.grid.grid-cols-1.sm\:grid-cols-3.gap-3 {
+    gap: 0.75rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .grid.grid-cols-1.sm\:grid-cols-3.gap-3 > div {
+        min-width: 0;
+        width: 100%;
+    }
+}
